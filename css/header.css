@@ -1,0 +1,28 @@
+.header__container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--azul-escuro);
+    border-bottom: 2px solid var(--azul-claro);
+    padding: 20px 22px;
+    margin-bottom: 25px;
+}
+
+.header__menu{
+    text-decoration: none;
+    color: var(--laranja);
+    font-size: 28px;
+}
+
+.header__icons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.icon__item{
+    color: var(--laranja);
+    font-size: 25px;
+}

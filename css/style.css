@@ -1,0 +1,31 @@
+@import url("./header.css");
+@import url("./presentation.css");
+
+:root{
+    --branco: #FFFFFF;
+    --branco-escuro: #f0f0f0;
+    --laranja: #ec8d35;
+    --preto: #000000;
+    --azul-escuro: #0F1C3F;
+    --azul-claro: #3B82F6;
+    --cinza-escuro: #2F2E41;
+    --cinza-claro: #F8F8F8;
+    --fonte-titulo: 'Bebas Neue';
+    --fonte-texto: 'Teko';
+    --gradiente-botao: linear-gradient(to right, #3B82F6 55%, #102a72);
+}
+body{
+    background-color: var(--azul-escuro);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--fonte-texto);
+}
+
+main{
+    margin: 0 25px;
+}
+
+.container{
+    margin: 0 auto;
+    height: 100vh;
+}
