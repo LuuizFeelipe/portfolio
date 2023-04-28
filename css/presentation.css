@@ -32,7 +32,7 @@ main{
 
 .fa-code{
     color: var(--laranja);
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .presentation__text-phrase{
@@ -51,7 +51,7 @@ main{
     width: 60%;
     padding: 15px 10px;
     border-radius: 8px;
-    font-size: 25px;
+    font-size: 27px;
     cursor: pointer;
 
 }

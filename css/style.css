@@ -1,5 +1,6 @@
 @import url("./header.css");
 @import url("./presentation.css");
+@import url("./description.css");
 
 :root{
     --branco: #FFFFFF;
@@ -8,7 +9,7 @@
     --preto: #000000;
     --azul-escuro: #0F1C3F;
     --azul-claro: #3B82F6;
-    --cinza-escuro: #2F2E41;
+    --cinza-escuro: #7e7e7e;
     --cinza-claro: #F8F8F8;
     --fonte-titulo: 'Bebas Neue';
     --fonte-texto: 'Teko';
