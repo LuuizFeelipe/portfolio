@@ -2,6 +2,7 @@
 @import url("./presentation.css");
 @import url("./description.css");
 @import url("./map.css");
+@import url("./abillitys.css");
 
 :root{
     --branco: #FFFFFF;
@@ -11,7 +12,7 @@
     --azul-escuro: #0F1C3F;
     --azul-claro: #3B82F6;
     --cinza-escuro: #7e7e7e;
-    --cinza-claro: #F8F8F8;
+    --cinza-claro: #41485B;
     --fonte-titulo: 'Bebas Neue';
     --fonte-texto: 'Teko';
     --gradiente-botao: linear-gradient(to right, #3B82F6 55%, #102a72);

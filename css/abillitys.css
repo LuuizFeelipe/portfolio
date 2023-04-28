@@ -1,0 +1,31 @@
+.abillitys{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.abillity{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 0 125px;
+    max-width: 150px;
+    height: 125px;
+    background: var(--cinza-claro);
+    border-bottom: 10px solid var(--azul-claro);
+    border-radius: 30% 8% 8% 8%;
+    text-align: center;
+}
+
+.icon__abillity{
+    color: var(--branco);
+    font-size: 70px;
+}
+
+.title__abillity{
+    color: var(--branco);
+    margin-top: 15px;
+}
+
