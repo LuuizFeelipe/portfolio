@@ -39,3 +39,21 @@
     color: var(--laranja);
     font-size: 25px;
 }
+
+@media screen and (min-width: 1025px){
+    .header__container{
+        padding: 15px 40px;
+    }
+
+    .header__menu{
+        font-size: 18px;
+    }
+
+    .header__title{
+        font-size: 25px;
+    }
+
+    .icon__item{
+        font-size: 20px;
+    }
+}

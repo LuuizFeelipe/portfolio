@@ -1,9 +1,3 @@
-.container__presentation{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .title{
     margin: 35px 0 18px 0;
     color: var(--branco);
@@ -17,6 +11,18 @@
     color: var(--cinza-escuro);
     line-height: 1.3;
     margin-bottom: 15px;
-    opacity: 70%;
+    opacity: 50%;
 
+}
+
+@media screen and (min-width: 1025px){
+    .title{
+        font-size: 25px;
+    }
+
+    .description-text{
+        margin: 0 80px 15px 80px;
+        line-height: 1.1;
+        font-size: 18px;
+    }
 }

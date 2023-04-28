@@ -28,10 +28,11 @@ body{
 }
 
 main{
-    margin: 0 25px;
+    margin: 0 20px;
 }
 
 .container{
     margin: 0 auto;
     height: 100vh;
 }
+
