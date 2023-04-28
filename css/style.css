@@ -1,6 +1,7 @@
 @import url("./header.css");
 @import url("./presentation.css");
 @import url("./description.css");
+@import url("./map.css");
 
 :root{
     --branco: #FFFFFF;

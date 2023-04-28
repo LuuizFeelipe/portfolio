@@ -19,6 +19,7 @@
     font-size: 33px;
     color: var(--branco);
     font-weight: 500;
+    text-decoration: none;
 }
 
 .header__icons{
