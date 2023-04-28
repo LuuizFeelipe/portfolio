@@ -22,7 +22,7 @@ body{
     font-weight: 400;
     font-family: var(--fonte-texto);
     box-sizing: border-box;
-    padding-top: 95px;
+    padding-top: 100px;
 }
 
 main{

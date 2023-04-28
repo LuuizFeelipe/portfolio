@@ -1,3 +1,11 @@
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+
 .header__container{
     display: flex;
     flex-wrap: wrap;
@@ -5,19 +13,13 @@
     justify-content: space-between;
     background-color: var(--azul-escuro);
     border-bottom: 2px solid var(--azul-claro);
-    padding: 20px 22px;
-    margin-bottom: 25px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
+    padding: 20px 25px;
 }
 
 .header__menu{
     text-decoration: none;
     color: var(--laranja);
-    font-size: 28px;
+    font-size: 25px;
 }
 
 .header__title{
@@ -29,12 +31,11 @@
 
 .header__icons{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
 }
 
 .icon__item{
     color: var(--laranja);
-    font-size: 25px;
+    font-size: 20px;
 }
