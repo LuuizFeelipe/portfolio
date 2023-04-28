@@ -14,8 +14,8 @@
     max-width: 150px;
     height: 125px;
     background: var(--cinza-claro);
-    border-bottom: 10px solid var(--azul-claro);
-    border-radius: 30% 8% 8% 8%;
+    border-bottom: 5px solid var(--azul-claro);
+    border-radius: 30% 0% 0% 0%;
     text-align: center;
 }
 
