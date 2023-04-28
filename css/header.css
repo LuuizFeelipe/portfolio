@@ -7,6 +7,11 @@
     border-bottom: 2px solid var(--azul-claro);
     padding: 20px 22px;
     margin-bottom: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .header__menu{
