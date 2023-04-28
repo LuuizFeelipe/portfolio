@@ -15,6 +15,12 @@
     font-size: 28px;
 }
 
+.header__title{
+    font-size: 33px;
+    color: var(--branco);
+    font-weight: 500;
+}
+
 .header__icons{
     display: flex;
     flex-direction: row;

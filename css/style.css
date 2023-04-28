@@ -20,6 +20,7 @@ body{
     font-size: 16px;
     font-weight: 400;
     font-family: var(--fonte-texto);
+    box-sizing: border-box;
 }
 
 main{
