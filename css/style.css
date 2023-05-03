@@ -14,7 +14,7 @@
     --azul-claro: #3B82F6;
     --cinza-escuro: #7e7e7e;
     --cinza-claro: #41485B;
-    --fonte-titulo: 'Bebas Neue';
+    --cinza-texto: #828282;
     --fonte-texto: 'Teko';
     --gradiente-botao: linear-gradient(to right, #3B82F6 55%, #102a72);
 }
@@ -34,5 +34,17 @@ main{
 .container{
     margin: 0 auto;
     height: 100vh;
+}
+
+@media screen and (min-width: 1025px){
+    main{
+        margin: 0 70px;
+    }
+}
+
+@media screen and (min-width: 1500px){
+    main{
+        margin: 0 150px;
+    }
 }
 

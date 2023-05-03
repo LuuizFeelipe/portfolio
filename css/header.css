@@ -42,18 +42,23 @@
 
 @media screen and (min-width: 1025px){
     .header__container{
-        padding: 15px 40px;
+        padding: 25px 40px;
     }
 
     .header__menu{
-        font-size: 18px;
+        font-size: 22px;
     }
 
     .header__title{
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .icon__item{
-        font-size: 20px;
+        font-size: 22px;
+        transition: 0.5s;
+    }
+
+    .icon__item:hover{
+        color: var(--branco);
     }
 }
