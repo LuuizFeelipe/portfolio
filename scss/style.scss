@@ -1,0 +1,40 @@
+//PARTES DA HOME
+@import './divisao__home/abillitys.scss';
+@import './divisao__home/contact.scss';
+@import './divisao__home/description.scss';
+@import './divisao__home/header.scss';
+@import './divisao__home/map.scss';
+@import './divisao__home/presentation.scss';
+
+//CORES
+@import './estilos/cores&fontes.scss';
+
+body{
+    background-color: var(--azul-escuro);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--fonte-texto);
+    box-sizing: border-box;
+    padding-top: 100px;
+}
+
+main{
+    margin: 0 20px;
+}
+
+.container{
+    margin: 0 auto;
+    height: 100vh;
+}
+
+@media screen and (min-width: 1025px){
+    main{
+        margin: 0 70px;
+    }
+}
+
+@media screen and (min-width: 1500px){
+    main{
+        margin: 0 150px;
+    }
+}
