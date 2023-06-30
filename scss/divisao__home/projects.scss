@@ -9,7 +9,7 @@
         .project__information{
             font-size: 35px;
             color: var(--laranja);
-            margin-top: 20px;
+            margin-top: 15px;
 
             animation-name: scale;
             animation-duration: 1s;
@@ -20,8 +20,9 @@
     }
 }
 
+//ANIMAÇÃO
 @keyframes scale {
     to{
-        transform: scale(1.5);
+        transform: scale(1.2);
     }
 }

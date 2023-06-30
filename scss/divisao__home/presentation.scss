@@ -44,6 +44,20 @@
         border-radius: 8px;
         font-size: 27px;
         cursor: pointer;
+
+        animation-name: scaleButton;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+
+
+    }
+}
+
+@keyframes scaleButton{
+    to{
+        transform: scale(1.1);
     }
 }
 
@@ -88,12 +102,7 @@
             justify-self: center;
             align-self: start;
             max-width: 300px;
-            cursor: pointer;
-            transition: 1s;
-    
+            cursor: pointer;    
         }    
-        .button-contact:hover{
-        transform: scale(1.07);
-        }
     }
 }
