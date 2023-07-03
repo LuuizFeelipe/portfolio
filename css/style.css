@@ -47,15 +47,15 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  gap: 30px;
-  cursor: pointer;
-  padding-bottom: 30px;
+  gap: 15px;
+  padding: 0 40px 130px 40px;
   flex-direction: row-reverse;
 }
 .contacts .link__contact {
   text-decoration: none;
   transition: 0.5s;
+  cursor: pointer;
+  text-align: center;
 }
 .contacts .link__contact:hover {
   transform: scale(0.85);
@@ -63,7 +63,7 @@
 .contacts .icon__contact {
   text-decoration: none;
   background-color: var(--laranja);
-  padding: 22px;
+  padding: 20px;
   border-radius: 50%;
   color: var(--azul-escuro);
   font-size: 30px;
@@ -280,6 +280,24 @@
     transform: scale(1.2);
   }
 }
+.container__btn-top {
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+}
+.container__btn-top #btn-top {
+  background: transparent;
+  border: none;
+}
+.container__btn-top #btn-top .fa-angle-up {
+  color: var(--branco);
+  font-size: 30px;
+  padding: 8px;
+  background: var(--laranja);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 :root {
   --branco: #FFFFFF;
   --branco-escuro: #f0f0f0;
