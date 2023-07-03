@@ -284,11 +284,11 @@
   position: fixed;
   bottom: 35px;
   right: 20px;
-  display: none;
 }
 .container__btn-top #btn-top {
   background: transparent;
   border: none;
+  display: none;
 }
 .container__btn-top #btn-top .fa-angle-up {
   color: var(--branco);
