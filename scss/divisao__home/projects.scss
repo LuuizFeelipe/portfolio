@@ -5,24 +5,31 @@
         align-items: center;
         flex-direction: row;
         flex-wrap: wrap;
+     }
+     .container__previa{
+        width: auto;
+        max-width: 450px;
+        border: var(--azul) 1.5px solid;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
 
-        .project__information{
+        .title__previa-project{
             font-size: 35px;
             color: var(--laranja);
-            margin-top: 15px;
-
-            animation-name: scale;
-            animation-duration: 1s;
-            animation-timing-function: ease-in-out;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
         }
-    }
-}
+        .paragraph__previa-project{
+            font-size: 25px;
+            font-weight: 300;
+            color: var(--cinza-texto);
+            padding: 20px 0;
+        }
+        .link__previa-project{
+            font-size: 30px;
+            text-decoration: none;
+            color: var(--azul);
+        }
+     }
 
-//ANIMAÇÃO
-@keyframes scale {
-    to{
-        transform: scale(1.2);
-    }
+
 }

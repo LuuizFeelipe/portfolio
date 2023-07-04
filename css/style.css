@@ -70,9 +70,9 @@
 }
 
 .title {
-  margin: 35px 0 18px 0;
+  margin: 60px 0 25px 0;
   color: var(--branco);
-  font-size: 35px;
+  font-size: 45px;
   text-align: center;
 }
 
@@ -87,7 +87,7 @@
 
 @media screen and (min-width: 1025px) {
   .title {
-    font-size: 32px;
+    font-size: 45px;
     margin: 70px 0 30px 0;
   }
   .description-text {
@@ -264,22 +264,30 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
-.projects__container .projects .project__information {
+.projects__container .container__previa {
+  width: auto;
+  max-width: 450px;
+  border: var(--azul) 1.5px solid;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.projects__container .container__previa .title__previa-project {
   font-size: 35px;
   color: var(--laranja);
-  margin-top: 15px;
-  animation-name: scale;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+}
+.projects__container .container__previa .paragraph__previa-project {
+  font-size: 25px;
+  font-weight: 300;
+  color: var(--cinza-texto);
+  padding: 20px 0;
+}
+.projects__container .container__previa .link__previa-project {
+  font-size: 30px;
+  text-decoration: none;
+  color: var(--azul);
 }
 
-@keyframes scale {
-  to {
-    transform: scale(1.2);
-  }
-}
 .container__btn-top {
   position: fixed;
   bottom: 35px;
@@ -306,9 +314,10 @@
   --preto: #000000;
   --azul-escuro: #0F1C3F;
   --azul-claro: #3B82F6;
+  --azul: #0062ff;
   --cinza-escuro: #7e7e7e;
   --cinza-claro: #41485B;
-  --cinza-texto: #828282;
+  --cinza-texto: #c5c5c5;
   --fonte-texto: "Teko";
   --gradiente-botao: linear-gradient(to right, #3B82F6 55%, #102a72);
 }
