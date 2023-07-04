@@ -20,3 +20,19 @@ function scrollBlockNone (){
 btn_top.addEventListener("click", scrollTop);
 window.addEventListener("scroll", scrollBlockNone);
 
+//NAVBAR
+const openNav = document.getElementById('header__menu');
+const closeNav = document.getElementById('close__nav-bar');
+
+function openMenu (){
+    const navBar = document.getElementById('navbar');
+    navBar.style.display = "block";
+}
+
+function closeMenu (){
+    const navBar = document.getElementById('navbar');
+    navBar.style.display = "none";
+}
+
+openNav.addEventListener("click", openMenu);
+closeNav.addEventListener("click", closeMenu);

@@ -131,6 +131,27 @@
   color: var(--laranja);
   font-size: 25px;
 }
+.header .header__nav-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100vh;
+  background: var(--gradiente-navbar);
+  transition: all 2s;
+  display: none;
+}
+.header .header__nav-bar ul {
+  list-style: none;
+  padding: 20px 5px 20px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.header .header__nav-bar ul .nav-bar__item {
+  color: var(--branco);
+  font-size: 28px;
+}
 
 @media screen and (min-width: 1025px) {
   .header__container {
@@ -320,6 +341,7 @@
   --cinza-texto: #c5c5c5;
   --fonte-texto: "Teko";
   --gradiente-botao: linear-gradient(to right, #3B82F6 55%, #102a72);
+  --gradiente-navbar: linear-gradient(to bottom, #3B82F6 5%, #102a72);
 }
 
 body {

@@ -37,6 +37,28 @@
             }
         }
     }
+    .header__nav-bar{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60%;
+        height: 100vh;
+        background: var(--gradiente-navbar);
+        transition: all 2s;
+        display: none;
+
+        ul{
+            list-style: none;
+            padding: 20px 5px 20px 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .nav-bar__item{
+                color: var(--branco);
+                font-size: 28px;
+            }
+        }
+    }
 
 }
 
