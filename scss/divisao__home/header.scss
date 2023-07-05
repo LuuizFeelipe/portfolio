@@ -65,6 +65,7 @@
                 color: var(--branco);
                 background: transparent;
                 border: none;
+                cursor: pointer;
             }
         }
 
@@ -99,25 +100,32 @@
 
 
 @media screen and (min-width: 1025px){
-    .header__container{
-        padding: 25px 40px;
+    .header{
+        .header__container{
+            padding: 25px 40px;
 
-        .header__menu{
-            font-size: 22px;
-        }
-    
-        .header__title{
-            font-size: 30px;
-        }
-
-        .header__icons{
-            .icon__item{
+            .header__menu{
                 font-size: 22px;
-                transition: 0.5s;
             }
         
-            .icon__item:hover{
-                color: var(--branco);
+            .header__title{
+                font-size: 30px;
+            }
+
+            .header__icons{
+                .icon__item{
+                    font-size: 22px;
+                    transition: 0.5s;
+                }
+            
+                .icon__item:hover{
+                    color: var(--branco);
+                }
+            }
+        }
+        .header__nav-bar{
+            .container__header-nav{
+                width: 400px;
             }
         }
     }

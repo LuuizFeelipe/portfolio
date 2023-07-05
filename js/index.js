@@ -27,7 +27,6 @@ const closeNav = document.getElementById('close__nav-bar');
 // ABRIR MENU
 function openMenu (){
     const navBar = document.getElementById('navbar');
-    const containerNavBar = document.getElementById('container__navbar');
     navBar.style.display = "block";
 }
 
@@ -44,11 +43,21 @@ function disableScroll (){
     window.scrollTo(0, positionScroll);
 }
 
+//ATIVAR SCROLL
 function enableScroll (){
     document.body.style.overflow = "auto";
 }
+
+const botoesMenu = document.querySelectorAll('.item__text');
 
 openNav.addEventListener("click", openMenu);
 openNav.addEventListener("click", disableScroll);
 closeNav.addEventListener("click", closeMenu);
 closeNav.addEventListener("click", enableScroll);
+
+botoesMenu.forEach((ev)=>{
+    ev.addEventListener("click", closeMenu);
+    ev.addEventListener("click", enableScroll);
+})
+
+
