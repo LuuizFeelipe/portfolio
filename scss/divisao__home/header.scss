@@ -44,15 +44,17 @@
         background: rgba(0, 0, 0, 0.507);
         position: absolute;
         top: 0;
-        left: 0;
-        bottom: 0;
         z-index: 9000;
         display: none;
 
         .container__header-nav{
+            position: fixed;
+            left: 0;
+            top: 0;
             width: 60%;
             background: var(--gradiente-navbar);
-            height: 100vh;
+            height: 99vh;
+            border-bottom: 10px solid var(--branco);
             z-index: 9001;
         }
 
