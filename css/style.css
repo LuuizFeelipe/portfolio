@@ -111,10 +111,10 @@
   border-bottom: 2px solid var(--azul-claro);
   padding: 20px 25px;
 }
-.header .header__container .header__menu {
-  text-decoration: none;
+.header .header__container .menu__hamburguer .header__menu {
   color: var(--laranja);
   font-size: 25px;
+  cursor: pointer;
 }
 .header .header__container .header__title {
   font-size: 33px;
@@ -132,14 +132,21 @@
   font-size: 25px;
 }
 .header .header__nav-bar {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.507);
   position: absolute;
   top: 0;
   left: 0;
-  width: 60%;
-  height: 100vh;
-  background: var(--gradiente-navbar);
-  transition: all 2s;
+  bottom: 0;
+  z-index: 9000;
   display: none;
+}
+.header .header__nav-bar .container__header-nav {
+  width: 60%;
+  background: var(--gradiente-navbar);
+  height: 100vh;
+  z-index: 9001;
 }
 .header .header__nav-bar ul {
   list-style: none;
