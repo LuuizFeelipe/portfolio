@@ -89,6 +89,8 @@
                 .item__text{
                     grid-area: text;
                     font-size: 25px;
+                    text-decoration: none;
+                    color: var(--branco);
                 }
             }
         }
