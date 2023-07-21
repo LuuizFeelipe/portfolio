@@ -11,6 +11,9 @@
 //CORES
 @import './estilos/cores&fontes.scss';
 
+//ANIMAÇÕES
+@import './animacoes/animacoes.scss';
+
 *{
     box-sizing: border-box;
 }
@@ -30,6 +33,14 @@ main{
 .container{
     margin: 0 auto;
     height: 100vh;
+}
+
+.active{
+    display: block;
+}
+
+.disable{
+    display: none;
 }
 
 @media screen and (min-width: 1025px){

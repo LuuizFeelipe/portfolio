@@ -20,21 +20,50 @@ function scrollBlockNone (){
 btn_top.addEventListener("click", scrollTop);
 window.addEventListener("scroll", scrollBlockNone);
 
+
+
+
+
+
+
+
+
+
+
 //NAVBAR
 const openNav = document.getElementById('header__menu');
 const closeNav = document.getElementById('close__nav-bar');
 
+const navBar = document.getElementById('navbar');
+const container__navBar = document.getElementById('container__navbar');
+
 // ABRIR MENU
 function openMenu (){
-    const navBar = document.getElementById('navbar');
-    navBar.style.display = "block";
+    container__navBar.classList.add('abrirMenu');
+    container__navBar.classList.remove('fecharMenu');
+    navBar.classList.add('active');
+    navBar.classList.remove('disable');
 }
 
 //FECHAR MENU
 function closeMenu (){
-    const navBar = document.getElementById('navbar');
-    navBar.style.display = "none";
+    setTimeout(()=>{
+    navBar.classList.add('disable');
+    }, 500);
+    setTimeout(()=>{
+    navBar.classList.remove('active');
+    }, 500);
+    container__navBar.classList.add('fecharMenu');
+    container__navBar.classList.remove('abrirMenu');
 }
+
+
+
+
+
+
+
+
 
 //DESABILITAR SCROLL
 function disableScroll (){

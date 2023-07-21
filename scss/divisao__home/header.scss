@@ -45,13 +45,12 @@
         position: absolute;
         top: 0;
         z-index: 9000;
-        display: none;
 
         .container__header-nav{
             position: fixed;
             left: 0;
             top: 0;
-            width: 60%;
+            width: 70%;
             background: var(--gradiente-navbar);
             height: 100vh;
             border-bottom: 5px solid var(--branco);
