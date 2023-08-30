@@ -23,13 +23,6 @@ window.addEventListener("scroll", scrollBlockNone);
 
 
 
-
-
-
-
-
-
-
 //NAVBAR
 const openNav = document.getElementById('header__menu');
 const closeNav = document.getElementById('close__nav-bar');
@@ -58,13 +51,6 @@ function closeMenu (){
 }
 
 
-
-
-
-
-
-
-
 //DESABILITAR SCROLL
 function disableScroll (){
     const positionScroll = window.scrollY;
@@ -89,4 +75,25 @@ botoesMenu.forEach((ev)=>{
     ev.addEventListener("click", enableScroll);
 })
 
+
+// SCROLL LINK INTERNO
+
+const linksInternos = document.querySelectorAll('.nav-bar__item a[href^="#"]');
+
+function scrollToSection(event){
+    event.preventDefault();
+    const href = event.currentTarget.getAttribute('href');
+    const section = document.querySelector(href);
+    const topo = section.offsetTop;
+    console.log(section);
+
+    window.scrollTo({
+        top: topo - 100,
+        behavior: 'smooth',
+    });
+}
+
+linksInternos.forEach((link) =>{
+    link.addEventListener('click', scrollToSection);
+})
 
