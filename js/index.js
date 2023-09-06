@@ -104,7 +104,7 @@ function initAnimacaoScroll() {
 
       const windowMobile = window.innerWidth <= 600;
       const windowDesktop = window.innerWidth >= 1200;
-      const windowMetadeMobile = window.innerHeight - 200;
+      const windowMetadeMobile = window.innerHeight * 0.83;
       const windowMetadeDesktop = window.innerHeight * 0.75;
   
       function animaScroll() {
