@@ -1,5 +1,3 @@
-AOS.init();
-
 //BOTÃO TOPO
 const btn_top = document.getElementById('btn-top');
 function scrollTop (){
@@ -96,4 +94,47 @@ function scrollToSection(event){
 linksInternos.forEach((link) =>{
     link.addEventListener('click', scrollToSection);
 })
+
+
+// ANIMAÇÃO SCROLL
+
+function initAnimacaoScroll() {
+    const sections = document.querySelectorAll('.js-scroll');
+    if(sections.length) {
+
+      const windowMobile = window.innerWidth <= 600;
+      const windowDesktop = window.innerWidth >= 1200;
+      const windowMetadeMobile = window.innerHeight - 200;
+      const windowMetadeDesktop = window.innerHeight * 0.75;
+  
+      function animaScroll() {
+        sections.forEach((section) => {
+          const sectionTop = section.getBoundingClientRect().top;
+          const isSectionVisibleMobile = (sectionTop - windowMetadeMobile) < 0;
+          const isSectionVisibleDesktop = (sectionTop - windowMetadeDesktop) < 0;
+
+          if(windowMobile){
+            if(isSectionVisibleMobile)
+                section.classList.add('ativo');
+            else 
+                section.classList.remove('ativo');
+          }
+          if(windowDesktop){
+            if(isSectionVisibleDesktop)
+                section.classList.add('ativo');
+            else 
+                section.classList.remove('ativo');
+          }
+        })
+      }
+    }
+  
+      animaScroll();
+  
+      window.addEventListener('scroll', animaScroll);
+}
+
+initAnimacaoScroll();
+
+
 
